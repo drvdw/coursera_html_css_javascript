@@ -1,0 +1,128 @@
+/* 
+    Created on : May 4, 2016, 5:02:17 PM
+    Author     : drvdw
+*/
+
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+
+
+.item {
+    background-color: #999999;
+    border: 2px solid black;
+    margin: 14px;
+}
+
+.item h2{
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;    
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    width: 140px;
+    float: right;
+}
+
+.item p{
+    clear: right;
+    margin: 13px;
+}
+
+#first {
+    background-color: #d59898;
+    color: black;
+}
+#second {
+    background-color: #c14543;
+    color: white;
+}
+#third {
+    background-color: #e1d199;
+    color: black;
+}
+
+
+
+
+/* Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+/********** Desktop view **********/
+/*
+In the desktop view (992px and above), 
+each of the 3 sections should take up equal amount
+of space on the screen. As you make the browser 
+window wider or narrower, each section should 
+become wider or narrower. 
+(Hint: use percentages to define width and 
+use the ‘float’ property. See Lecture 24). 
+*/
+@media (min-width: 992px) {
+    .col-desktop-4 {
+        float: left;
+        //       border: 1px solid green;
+    }
+    .col-desktop-4 { /* each of the 3 sections should take up equal amount of space */
+        width: 33.33%;
+    }
+}
+
+/********** Tablet View **********/
+/*
+In the tablet view (between 768px and 991px, inclusively), 
+the first 2 sections should be in the first row and be of 
+equal size. The 3rd section should be in the second row and 
+take up the entire row by itself. For a visual reference of 
+this view, see the tablet mockup illustration below.
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-6, .col-tablet-12 {
+        float: left;
+        //        border: 1px solid green;
+    }
+    .col-tablet-6 { /* the first 2 sections should be in the first row and be of equal size */
+        width: 50%;
+    }
+    .col-tablet-12 {  /* The 3rd section should be in the second row and take up the entire row by itself. */
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/*
+In the mobile view (equal to or less than 767px), each section should
+take up the entire row. For a visual reference of this view, see the 
+mobile mockup illustration below
+*/
+@media (max-width: 767px) {
+    .col-mobile-12 {
+        float: left;
+        //        border: 1px solid green;
+    }
+    .col-mobile-12 {  /* each section should take up the entire row.. */
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
