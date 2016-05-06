@@ -1,0 +1,130 @@
+
+body {
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+}
+
+#header-nav{
+    background-color: #989898;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 3px solid black;
+    min-height: 70px;
+}
+
+
+.navbar-brand {
+    //padding-top: 25px;
+}
+
+.navbar-brand h1 {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    //margin-left: -90px;
+    //margin-top: 0px;
+    //line-height: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#our-menu{
+    text-align: center;
+}
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid red;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+
+
+#collapsable-nav li{
+    text-align: center;
+    background-color: orange;
+}
+
+.navbar-static-top{
+    position:relative;
+}
+
+.container {
+  transition: padding 500;
+  //background-color: lightblue;
+}
+
+.container-is-open {
+  padding-top:200px;
+}
+
+
+
+
+
+
+.item {
+    background-color: #999999;
+    border: 2px solid black;
+    margin: 14px;
+}
+
+.item h2{
+    //border-bottom: 2px solid black;
+    //border-left: 2px solid black;    
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+        font-weight: bold;
+    //width: 140px;
+    //float: right;
+}
+
+.item p{
+    clear: right;
+    margin: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// not implementing?
+//@media (min-width: 1200px) {
+
+// Desktop
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+//Tablet
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+//Mobile
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+}
