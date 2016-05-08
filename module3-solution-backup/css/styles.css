@@ -10,12 +10,11 @@ body {
     border-radius: 0;
     border: 0;
     border-bottom: 3px solid black;
-    height: 66px;
 }
 
-
-.navbar-brand {
-    //padding-top: 25px;
+.navbar-collapse{
+    padding: 0px;
+    border: 0px;
 }
 
 .navbar-brand h1 {
@@ -23,79 +22,81 @@ body {
     font-size: 25px;
     font-weight: bold;
     margin-top: 0;
-    margin-left: -90px;
-    margin-top: 10px;
-    line-height: 0;
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
 }
 
-#our-menu{
-    text-align: center;
-}
 
 
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    border: 1px solid red;
+.navbar-header .icon-bar {
+    border: 2px solid magenta;
 }
 .navbar-header button.navbar-toggle {
+ border: 2px solid black;
     clear: both;
     margin-top: -30px;
 }
+.navbar-header button.navbar-toggle:hover {
+     background-color: yellow;
+}
+.navbar-header button.navbar-toggle:focus {
+    border: 6px solid yellowgreen;
+    background-color: cadetblue;
+}
+
+.navbar-header button.navbar-toggle:hover .icon-bar{
+      border: 2px solid green;
+}
+.navbar-header button.navbar-toggle:focus .icon-bar{
+     border: 2px solid blue;
+}
 
 
 
-#collapsable-nav li{
-    text-align: center;
+
+
+
+
+
+#nav-list {
+    margin: 0;
+}
+#nav-list a{    
     background-color: orange;
+    color: red;
+}
+#nav-list a:hover {
+    background-color: hotpink;
+    color: turquoise;
+}
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.navbar-static-top{
-    position:relative;
-}
-/*
-.container {
-  transition: padding 500;
-  background-color: lightblue;
-}
 
 .container-is-open {
-  padding-top:200px;
+    padding-top:200px;
 }
-
-
-
-
-
 
 .item {
     background-color: #999999;
     border: 2px solid black;
-    margin: 14px;
+    margin: 5px;
 }
 
 .item h2{
-    //border-bottom: 2px solid black;
-    //border-left: 2px solid black;    
-    text-align: center;
     font-size: 20px;
     margin-top: 10px;
-        font-weight: bold;
-    //width: 140px;
-    //float: right;
+    font-weight: bold;
 }
 
 .item p{
-    clear: right;
     margin: 13px;
 }
 
-
-
-
-*/
 
 
 
